@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Артур Бубнов](https://up.htmlacademy.ru/htmlcss/16/user/334587).
-* Наставник: [Леонид Лебедев].
+* Наставник: [Леонид Лебедев](https://htmlacademy.ru/profile/leonidlebedev).
 
 ---
 
