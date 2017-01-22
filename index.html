@@ -32,59 +32,59 @@
            <div class="logo-main">
                <img src="#" width="490" height="360" alt="Welcome to Sedona">
            </div>
-           <div class="sedona">   
+           <section class="sedona">   
                <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
                <p>Рассмотри 5 причин, по которым седона круче, чем Гранд Каньон!</p>
-           </div>
-           <div class="features"><!--Убрал, вроде как, лишние блоки и обединил общими классами похожие друг на друга блоки -->
-               <div class="features-block-1">
+           </section>
+           <div class="features">
+               <div class="feature-item blue">
                    <h3>Настоящий городок</h3>
                    <p>- №1 -</p>
                    <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
                </div>
-               <img src="#" width="512" height="258" alt="Sedona city">
-               <div class="features-block-2">
+               <div class="feature-pic">
+                   <img src="#" width="512" height="258" alt="Sedona city">
+               </div>
+               <div class="feature-item icon">
                    <h3>Жилье</h3>
                    <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                </div>
-               <div class="features-block-2">      
+               <div class="feature-item icon">      
                    <h3>Еда</h3>
                    <p>Всегда заказывайте фирменный бургер, вы не разочеруетесь!</p>
                </div>
-               <div class="features-block-2">       
+               <div class="feature-item icon">       
                    <h3>Сувениры</h3>
                    <p>Не только китайского, но и местного производства!</p>
                </div>
-               <img src="#" width="512" height="258" alt="Sedona canyon">
-               <div class="features-block-1">
+               <div class="feature-pic">
+                   <img src="#" width="512" height="258" alt="Sedona canyon">
+               </div>
+               <div class="feature-item blue">
                    <h3>Там есть мост дьвола</h3>
                    <p>- №2 -</p>
                    <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                </div>
-               <div class="features-block-3">
+               <div class="feature-item gray">
                    <h3>Небольшая площадь</h3>
                    <p>- №3 -</p>
                    <p>Все достопримечательности находятся очень близко</p>
                </div>
-               <div class="features-block-3">
+               <div class="feature-item gray">
                    <h3>Красивая дорога</h3>
                    <p>- №4-</p>
                    <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                </div>
-               <div class="features-block-3">
+               <div class="feature-item gray">
                    <h3>Мало туристов</h3>
                    <p>- №5 -</p>
                    <p>Большинство едет в Гранд Каньон и толпится там</p>
                </div>
            </div>   
            <div class="interest">
-               <div class="header-interest">
-                   <h2>Заинтересовались?</h2>
-                   <p>Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения госиниц в Седоне</p>
-               </div>
-               <div class="header-search">
-                   <h2><a href="#">Поиск гостиницы в Седоне</a></h2>
-               </div>
+               <h2>Заинтересовались?</h2>
+               <p>Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения госиниц в Седоне</p>              
+               <h2><a href="#">Поиск гостиницы в Седоне</a></h2>
            </div>
            <div class="search">
                <form class="search-hotel" action="https://echo.htmlacademy.ru" method="get">
@@ -95,8 +95,8 @@
                    <label for="number-of-adults">Взрослые:</label>
                    <input id="number-of-adults" type="number" name="number-of-adults" >
                    <label for="amount-of-children">Дети:</label>
-                   <input id="amount-of-children" type="number" name="amount-of-children" >
-                   <button class="btn" type="submit">Найти</button>
+                   <input id="amount-of-children" type="number" name="amount-of-children">
+                   <button class="btn-search" type="submit">Найти</button>
                 </form>
            </div>
        </main>
@@ -112,7 +112,9 @@
                </div>
                <div class="footer-copyright">
                    <p>WEBSITE BY</p>
-                   <a class="btn" href="https://htmlacademy.ru">HTML Academy</a> <!--класс взял из примера по вебинару -->
+                   <a href="https://htmlacademy.ru">
+                       <img src="#" width="120" height="45" alt="html academy">
+                   </a> 
                </div>
            </div>    
        </footer>
