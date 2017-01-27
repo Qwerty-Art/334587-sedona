@@ -1,15 +1,22 @@
 body {
+    min-height: 1200px;
+    margin: 0;
+    padding: 0;
     font-style: normal;
     font-size: 14px;
     line-height: 26px;
     font-weight: bold;
     font-family: "PT Sans", "Arial", sans-serif;
-    color: #000000
+    color: #000000;
+    background-color: gold
 }
 
 h1 {
+    width: 445px;
+    margin: 0 auto ;
     font-size: 21px;
     line-height: 26px;
+    text-align: center
 }
 
 h2 {
@@ -21,3 +28,97 @@ p {
     font-weight: normal;
     color: #333333;
 }
+
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.main-navigation {
+}
+
+.main-navigation li {
+    display: inline;
+    margin-right: 147px;
+    margin-bottom: 16px;
+    list-style: none;
+    
+}
+
+.logo-header {
+    position: absolute;
+    top: 0;
+    left: 45%;
+    right: 55%;
+    width: 140px;
+    height: 70px;
+}
+
+main{
+    margin: 0;
+    padding-top: 76px;
+    background-color: indianred;
+}
+
+.logo-main {
+    width: 448px;
+    height: 352px;
+    margin: 0 auto 146px;
+}
+
+.strip-main {
+    width: 1200px;
+    height: 57px;
+}
+
+.sedona {
+    padding-top: 62px;
+    background-color: white;
+}
+
+.sedona p{
+    width: 450px;
+    margin: 033px auto 0;
+    text-align: center;
+}
+
+.feature-item {
+    min-height: 256px;
+}
+
+.blue {
+    width: 400px;
+    min-height: 256px;
+    float: left;
+    background-color: #81b3d2;
+}
+
+.blue h2 {
+    width: 130px;
+    margin: 54px auto 26px;
+    text-align: center
+}
+
+.blue p {
+    width: 290px;
+    margin: 0 auto 26px;
+    text-align: center;
+}
+
+.feature-pic img {
+    float: left;
+    width: 800px;
+    height: 256px;
+}
+
+
+
+
+
