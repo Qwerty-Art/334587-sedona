@@ -40,12 +40,17 @@ p {
     clear: both;
 }
 
+.main-header {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff; 
+}
+
 .main-navigation li {
     display: inline;
     margin-right: 147px;
     margin-bottom: 16px;
-    list-style: none;
-    
+    list-style: none;   
 }
 
 .logo-header {
@@ -92,7 +97,7 @@ main{
 .blue {
     float: left;
     width: 400px;
-    height: 256px;
+    min-height: 256px;
     float: left;
     background-color: #81b3d2;
 }
@@ -100,14 +105,15 @@ main{
 .blue h2 {
     width: 130px;
     margin: 56px auto 0;
-    color: white;
+    color: #ffffff;
     text-align: center
 }
 
 .blue p {
     width: 250px;
     margin: 26px auto 26px;
-    color: wheat;
+    color: #ffffff;
+    line-height: 21px;
     text-align: center;
 }
 
@@ -119,8 +125,78 @@ main{
 
 .icon {
     width: 400px;
-    height: 332px;
+    min-height: 332px;
+    background-color: white;
 }
+
+.icon h2 {
+    width: 110px;
+    margin: 164px auto 26px;
+    text-align: center;
+}
+
+.icon p {
+    width: 300px;
+    margin: 0 auto;
+    line-height: 21px;
+    text-align: center;
+}
+
+.gray {
+    float: left;
+    width: 400px;
+    min-height: 256px;
+    float: left;
+    background-color: #eeeeee;
+}
+
+.gray h2 {
+    width: 130px;
+    margin: 56px auto 0;
+    text-align: center
+}
+
+.gray p {
+    width: 250px;
+    margin: 26px auto 26px;
+    color: #333333;
+    line-height: 21px;
+    text-align: center;
+}
+
+.interest{
+    width: 1200px;
+    min-height: 292px;
+    padding: 57px 0;
+    background-color: #ffffff;
+}
+
+.interest h2 {
+    width: 300px;
+    margin: 0 auto;
+    font-size: 30px;
+    text-align: center;
+}
+
+.interest p {
+    width: 450px;
+    margin: 32px auto 49px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.interest h2 a {
+    display: block;
+    width: 570px;
+    height: 87px;
+    margin: 0 auto;
+    font-size: 21px;
+    text-decoration: none;
+    background-color: #766357;
+}
+
+
+
 
 
 
