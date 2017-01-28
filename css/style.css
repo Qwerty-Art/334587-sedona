@@ -166,7 +166,7 @@ main{
 
 .interest{
     width: 1200px;
-    min-height: 292px;
+    height: 292px;
     padding: 57px 0;
     background-color: #ffffff;
 }
@@ -185,19 +185,97 @@ main{
     text-align: center;
 }
 
-.interest h2 a {
-    display: block;
+.interest h3 {
     width: 570px;
     height: 87px;
     margin: 0 auto;
-    font-size: 21px;
-    text-decoration: none;
+    vertical-align: middle;
+    text-align: center;
     background-color: #766357;
 }
 
+.search {
+    width: 1200px;
+    height: 475px;
+}
+.search-hotel {
+    box-sizing: border-box;
+    width: 570px;
+    height: 395px;
+    padding: 0 56px;
+    padding-top: 56px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #ffffff;
+}
 
+.search-hotel label[for^=arrival] {
+    margin-right: 22px;    
+}
 
+.search-hotel label[for^=departure] {
+    margin-right: 18px;    
+}
 
+.search-hotel label[for^=adults] {
+    margin-right: 42px;
+}
 
+.search-hotel label[for^=children] {
+    margin-right: 27px;
+}
+
+.search-hotel input[type="text"] {
+    display: inline-block;
+    width: 348px;
+    height: 37px;
+    margin-bottom: 30px;
+}
+
+.search-hotel input[type="number"] {
+    width: 115px;
+    height: 37px;
+    margin-right: 53px;
+    margin-bottom: 54px;
+}
+
+.btn-search {
+    width: 458px;
+    height: 58px;
+    font-size: 21px;
+    color: #ffffff;
+    background-color: #81b3d2;
+}
+
+.main-footer {
+    background-color: rgba(255,255,255,0.9)
+}
+
+.footer-visit {
+    display: inline-block;
+    width: 121px;
+    margin-left: 132px;
+    font-size: 21px;
+}
+
+.footer-social {
+    display: inline-block;
+    
+}
+
+.footer-copyright {
+    display: inline-block;
+    width: 200px;
+}
+
+.footer-copyright p {
+    display: inline;
+    margin-right: 5px;
+    vertical-align:top
+}
+
+.footer-copyright img {
+    display: inline;
+}
 
 
