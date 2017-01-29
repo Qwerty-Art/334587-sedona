@@ -1,14 +1,13 @@
 body {
     min-height: 1200px;
-    margin: 0;
-    padding: 0;
     font-style: normal;
     font-size: 14px;
     line-height: 26px;
     font-weight: bold;
     font-family: "PT Sans", "Arial", sans-serif;
+    text-transform: uppercase;
     color: #000000;
-    background-color: gold
+    background-color: #efefef;
 }
 
 h1 {
@@ -16,7 +15,7 @@ h1 {
     margin: 0 auto 25px;
     font-size: 21px;
     line-height: 26px;
-    text-align: center
+    text-align: center;
 }
 
 h2 {
@@ -40,8 +39,11 @@ p {
     clear: both;
 }
 
+/* стили для index */
+
 .main-header {
     width: 1200px;
+    height: 56px;
     margin: 0 auto;
     background-color: #ffffff; 
 }
@@ -51,11 +53,16 @@ p {
     margin-right: 147px;
     margin-bottom: 16px;
     list-style: none;   
+    line-height: 56px;
+}
+
+.main-navigation>ul>li:nth-child(2){
+    margin-right: 389px;
 }
 
 .logo-header {
     position: absolute;
-    top: 0;
+    top: 14px;
     left: 45%;
     right: 55%;
     width: 140px;
@@ -63,8 +70,6 @@ p {
 }
 
 main{
-    margin: 0;
-    padding-top: 76px;
     background-color: indianred;
 }
 
@@ -72,6 +77,7 @@ main{
     width: 448px;
     height: 352px;
     margin: 0 auto 22px;
+    padding-top: 76px;
 }
 
 .strip-main {
@@ -165,6 +171,7 @@ main{
 }
 
 .interest{
+    box-sizing: border-box;
     width: 1200px;
     height: 292px;
     padding: 57px 0;
@@ -189,7 +196,8 @@ main{
     width: 570px;
     height: 87px;
     margin: 0 auto;
-    vertical-align: middle;
+    font-size: 21px;
+    line-height: 87px;
     text-align: center;
     background-color: #766357;
 }
@@ -199,18 +207,19 @@ main{
     height: 475px;
 }
 .search-hotel {
-    box-sizing: border-box;
     width: 570px;
     height: 395px;
-    padding: 0 56px;
     padding-top: 56px;
     margin: 0 auto;
     text-align: left;
     background-color: #ffffff;
 }
 
+/* от сюда до... */
+
 .search-hotel label[for^=arrival] {
     margin-right: 22px;    
+    padding-left: 56px;
 }
 
 .search-hotel label[for^=departure] {
@@ -239,6 +248,8 @@ main{
     margin-bottom: 54px;
 }
 
+/* ... сюда, пока не работает. Пока не разобрался как исправить */
+
 .btn-search {
     width: 458px;
     height: 58px;
@@ -248,7 +259,10 @@ main{
 }
 
 .main-footer {
-    background-color: rgba(255,255,255,0.9)
+    height: 120px;
+    margin-top: 82px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.9);
 }
 
 .footer-visit {
@@ -260,22 +274,93 @@ main{
 
 .footer-social {
     display: inline-block;
-    
+    margin: 0 220px;
 }
 
 .footer-copyright {
     display: inline-block;
     width: 200px;
+    margin-right: 103px;
 }
 
 .footer-copyright p {
-    display: inline;
+    display: inline-block;
     margin-right: 5px;
-    vertical-align:top
+    line-height: 60px;
 }
 
 .footer-copyright img {
     display: inline;
 }
 
+
+/* стили для sedona-hotel */
+
+.filter {
+    width: 1200px;
+    height: 217px;
+    background-color: #86a9c5;
+}
+
+.infrastructure {
+    float: left;
+    width: 241px;
+    margin-top: 29px;
+    border-style: none;
+}
+
+
+.home {
+    float: left;
+    width: 241px;
+    margin-top: 29px;
+    border-style: none;
+}
+
+.price {
+    float: right;
+    width: 328px;
+    margin-top: 29px;
+    border-style: none;
+}
+
+.result-sorting {
+    margin-bottom: -82px;
+    background-color: #ffffff;
+}
+
+.sorting {
+    height: 87px;
+}
+
+.sorting ul {
+    display: inline
+}
+
+.sorting li {
+    display: inline;
+    list-style: none;
+}
+
+.result {
+    height: 150px;
+    border-top: 1px solid grey;
+}
+.result:last-child {
+    border-bottom: 1px solid grey;
+}
+
+.result img {
+    margin-top: 29px;
+}
+
+.info {
+    display: inline-block;
+    width: 393px;
+}
+
+.rating {
+    display: inline-block;
+    width: 241px;
+}
 
