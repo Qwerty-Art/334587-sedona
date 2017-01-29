@@ -1,5 +1,5 @@
 body {
-    min-height: 1200px;
+    margin: 0;
     font-style: normal;
     font-size: 14px;
     line-height: 26px;
@@ -46,6 +46,10 @@ p {
     height: 56px;
     margin: 0 auto;
     background-color: #ffffff; 
+}
+
+.main-navigation ul {
+    margin: 0;
 }
 
 .main-navigation li {
@@ -309,7 +313,6 @@ main{
     border-style: none;
 }
 
-
 .home {
     float: left;
     width: 241px;
@@ -330,16 +333,23 @@ main{
 }
 
 .sorting {
-    height: 87px;
+    height: 86px;
+    margin-left: 72px;
+    line-height: 86px;
 }
 
 .sorting ul {
-    display: inline
+    display: inline;
 }
 
 .sorting li {
     display: inline;
     list-style: none;
+}
+
+.sorting span a {
+    float: right;
+    margin-right: 72px;
 }
 
 .result {
