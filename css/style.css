@@ -42,6 +42,7 @@ p {
 /* стили для index */
 
 .main-header {
+    position: relative;
     width: 1200px;
     height: 56px;
     margin: 0 auto;
@@ -66,8 +67,8 @@ p {
 
 .logo-header {
     position: absolute;
-    top: 14px;
-    left: 45%;
+    top: 0px;
+    left: 532px;
     right: 55%;
     width: 140px;
     height: 70px;
