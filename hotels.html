@@ -6,8 +6,8 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
+        <div class="wrapper">
         <header class="main-header">
-            <div class="container">
                 <nav class="main-navigation">
                     <ul>
                         <li>
@@ -20,17 +20,16 @@
                             <a href="#">Карта штата</a>
                         </li>
                         <li>
-                            <a class="active" href="#">Гостиницы</a>
+                            <a>Гостиницы</a>
                         </li> 
                     </ul>
                 </nav>
-            </div>
-            <div class="logo-header">
-               <a href="index.html"><img src="img/header-logo.png" width="138" height="70" alt="City of Seodna"></a>
-            </div>
+                <div class="logo-header">
+                    <a href="index.html"><img src="img/header-logo.png" width="138" height="70" alt="City of Seodna"></a>
+                </div>
         </header>
-        <main class="container">
-            <form class="filter clearfix" action="https://echo.htmlacademy.ru/" method="get">
+        <main>
+            <form class="filter container clearfix" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset class="infrastructure">
                     <legend>Инфраструктура:</legend>
                     <input id="pool" type="checkbox" name="infrastructure" value="pool" checked>
@@ -58,11 +57,11 @@
                     <div class="slider">
                         
                     </div>
+                    <button class="btn-filter" type="submit">Показать</button>
                 </fieldset>
-                <button class="btn-filter" type="submit">Показать</button>
             </form>
-            <div class="result-sorting">
-                <div class="sorting">
+            <div class="result-sorting ">
+                <div class="sorting container clearfix">
                     <span>Найдено: 3</span>
                     <span>Сортировка:</span>
                     <ul>
@@ -70,44 +69,55 @@
                         <li><a href="#">По типу</a></li>
                         <li><a href="#">По рейтингу</a></li>
                     </ul>
-                    <span class="sorting-icon"><a href="#">по возрастанию/по убыванию</a></span>
+                    <div class="sorting-icon">
+                        <ul>
+                            <li><a href="#">В</a></li>
+                            <li><a href="#">У</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <article class="result">
-                    <img src="img/hotels/amara.jpg" width="135" height="90" alt="Amara Resort &amp; Spa">    
+                <article class="result container clearfix">
+                    <div class="result-pic">
+                        <img src="img/hotels/amara.jpg" width="135" height="90" alt="Amara Resort &amp; Spa">
+                    </div>    
                     <div class="info">
                         <h2>Amara Resort &amp; Spa</h2>
                         <b>Гостиница</b>
                         <b>От 4000Р.</b>                        
-                        <a class="btn-info" href="#">Подробнее</a>
-                        <a class="btn-book" href="#">Забронировать</a>
+                        <a class="btn btn-info" href="#">Подробнее</a>
+                        <a class="btn btn-book" href="#">Забронировать</a>
                     </div>   
                     <div class="rating">
                         <span>Звезды</span>
                         <span>Рейтинг: 8,5</span>
                     </div>               
                 </article>
-                <article class="result">
-                    <img src="img/hotels/desert.jpg" width="135" height="90" alt="Desert Quail Inn">   
+                <article class="result container clearfix">
+                    <div class="result-pic">
+                        <img src="img/hotels/desert.jpg" width="135" height="90" alt="Desert Quail Inn">   
+                    </div>
                     <div class="info">
                         <h2>Desert Quail Inn</h2>
                         <b>Мотель</b>
                         <b>От 3000Р.</b>
-                        <a class="btn-info" href="#">Подробнее</a>
-                        <a class="btn-book" href="#">Забронировать</a>
+                        <a class="btn btn-info" href="#">Подробнее</a>
+                        <a class="btn btn-book" href="#">Забронировать</a>
                     </div>   
                     <div class="rating">
                         <span>Звезды</span>
                         <span>Рейтинг: 8,9</span>
                     </div>               
                 </article>  
-                <article class="result">
-                    <img src="img/hotels/villas.jpg" width="135" height="90" alt="Villas at Poco Diablo">    
+                <article class="result container clearfix">
+                    <div class="result-pic">
+                        <img src="img/hotels/villas.jpg" width="135" height="90" alt="Villas at Poco Diablo">  
+                    </div>  
                     <div class="info">
                         <h2>Villas at Poco Diablo</h2>
                         <b>Апартаменты</b>
                         <b>От 2000Р.</b>
-                        <a class="btn-info" href="#">Подробнее</a>
-                        <a class="btn-book" href="#">Забронировать</a>
+                        <a class="btn btn-info" href="#">Подробнее</a>
+                        <a class="btn btn-book" href="#">Забронировать</a>
                     </div>   
                     <div class="rating">
                         <span>Звезды</span>
@@ -116,7 +126,7 @@
                 </article>                  
             </div>
         </main>
-        <footer class="main-footer">
+        <footer class="main-footer clearfix">
             <div class="footer-visit">
                 <p>#VISITSEDOA</p>
             </div>
@@ -132,5 +142,6 @@
                 </a> 
             </div>
         </footer>
+        </div>
     </body>
 </html>
