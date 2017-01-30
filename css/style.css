@@ -1,15 +1,24 @@
 body {
+    margin: 0;
     font-style: normal;
     font-size: 14px;
     line-height: 26px;
     font-weight: bold;
     font-family: "PT Sans", "Arial", sans-serif;
-    color: #000000
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #efefef;
+    
 }
 
 h1 {
+    width: 445px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 26px;
     font-size: 21px;
     line-height: 26px;
+    text-align: center;
 }
 
 h2 {
@@ -21,3 +30,406 @@ p {
     font-weight: normal;
     color: #333333;
 }
+
+.wrapper {
+    min-width: 768px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* стили для index */
+
+.main-header {
+    position: relative;
+    min-width: 768px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 6%;
+    padding-right: 6%;
+    background-color: #ffffff; 
+}
+
+.main-navigation ul {
+    margin: 0;   
+}
+
+.main-navigation li {
+    display: inline;    
+    margin-bottom: 16px;
+    list-style: none;  
+    vertical-align: top;
+    text-align: center;
+}
+
+.logo-header {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    width: 140px;
+    height: 70px;
+    margin-left: -70px;
+}
+
+main{
+    background-color: indianred;
+}
+
+.logo-main{
+    padding-top: 76px;
+    padding-bottom: 84px;
+}
+
+.logo-main img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sedona {
+    padding-top: 59px;
+    background-color: white;
+    padding-bottom: 50px;
+}
+
+.sedona p{
+    width: 50%;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.feature-item {
+    float: left;
+    width: 33.33%;
+}
+
+.blue { 
+    min-height: 256px;
+    background-color: #81b3d2;
+}
+
+.blue h2 {
+    margin: 56px auto 0;
+    color: #ffffff;
+    text-align: center
+}
+
+.blue p {
+    margin: 26px auto 26px;
+    color: #ffffff;
+    line-height: 21px;
+    text-align: center;
+}
+
+.feature-pic {
+    float: left;
+    width: 66.66%;
+    max-height: 256px;
+}
+
+.feature-pic img {
+    display: block;
+    width: 100%;
+    height: auto;
+    
+}
+
+.feature-item.icon {
+    box-sizing: border-box;
+    width: 33.33%;
+    min-height: 330px;
+    padding-top: 162px;
+    padding-bottom: 41px;
+    background-color: white;
+}
+
+.icon h2 {
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+.icon p {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.feature-item.gray {
+    box-sizing: border-box;
+    width: 33.33%;
+    min-height: 256px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    background-color: #eeeeee;
+}
+
+.gray h2 {
+    text-align: center
+}
+
+.gray p {
+    color: #333333;
+    text-align: center;
+}
+
+.interest{
+    width: 100%;
+    padding-top: 57px;
+    background-color: #ffffff;
+}
+
+.interest h2 {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    text-align: center;
+}
+
+.interest p {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.interest h3 {
+    box-sizing: border-box;
+    width: 570px;
+    height: 87px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    padding-top: 30px;
+    font-size: 21px;
+    text-align: center;
+    background-color: #766357;
+}
+
+.search-hotel {
+    box-sizing: border-box;
+    width: 570px;
+    min-height: 395px;
+    padding: 55px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #ffffff;
+}
+
+/* поля формы */
+
+.type-text {
+    clear: both;
+    margin-bottom: 29px;
+    text-align: right;
+}
+
+.type-text label {
+    float: left;
+    padding-top: 10px
+}
+
+.type-text input {
+    width: 345px;
+    height: 40px;
+}
+
+.search-hotel > label:nth-of-type(1) {
+    margin-right: 36px;
+}
+
+.search-hotel > label:nth-of-type(2) {
+    margin-left: 45px;
+    margin-right: 22px;
+}
+
+.search-hotel > input {
+    width: 114px;
+    height: 40px;
+    margin-bottom: 54px;
+}
+
+.btn-search {
+    width: 458px;
+    height: 58px;
+    font-size: 21px;
+    color: #ffffff;
+    background-color: #81b3d2;
+}
+
+
+
+.main-footer {
+    padding-top: 36px;
+    padding-bottom: 36px;
+    background-color: rgba(255,255,255,0.9);
+}
+
+.footer-visit {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+
+.footer-social {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+
+.footer-copyright {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+   
+}
+
+.footer-copyright p {
+    width: 33.33%;
+    display: inline-block;
+    vertical-align: middle;    
+    text-align: center;
+}
+
+
+/* стили для sedona-hotel */
+
+.container {
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+
+.filter {
+    min-height: 217px;
+    padding-top: 29px;
+    background-color: #86a9c5;
+}
+
+.infrastructure {
+    float: left;
+    width: 25%;
+    margin: 0;
+    padding: 0;
+    border-style: none;
+    text-align: left;
+}
+
+.home {
+    float: left;
+    width: 25%;
+    margin: 0;
+    padding: 0;
+    border-style: none;
+    text-align: left;
+}
+
+.price {
+    float: right;
+    width: 33.33%;
+    margin: 0;
+    padding: 0;
+    border-style: none;
+    text-align: right;
+}
+
+.result-sorting {
+    background-color: #ffffff;
+}
+
+.sorting {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.sorting > span:first-of-type {
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.sorting > span:last-of-type {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.sorting > span:not(:last-of-type) {
+    margin-right: 49px;
+}
+
+.sorting > ul {
+    display: inline;
+    margin-left: 41px;
+    padding: 0;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.sorting > ul > li {
+    display: inline;
+    margin-right: 35px;
+    list-style: none;
+}
+
+.sorting-icon {
+    float: right;
+    width: 10%;
+    text-align: right
+}
+
+.sorting-icon > ul {
+    display: inline;
+    padding: 0;
+}
+
+.sorting-icon > ul > li {
+    display: inline;
+    margin-left: 10px;
+    list-style: none;
+}
+
+.result {
+    border-top: 1px solid grey;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.result:last-child {
+    border-bottom: 1px solid grey;
+}
+
+.result-pic {
+    float: left;
+    width: 135px;
+    margin-right: 30px;
+}
+
+.result-pic img {
+    display: block; 
+   
+}
+
+.info {
+    float: left;
+    width: 55%;
+}
+
+.rating {
+    float: right;
+    width: 20%;
+    text-align: right
+}
+
+.rating > span:not(:last-of-type) {
+    display: block;
+    margin-bottom: 50px; 
+}
+
