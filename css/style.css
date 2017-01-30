@@ -225,7 +225,38 @@ main{
     background-color: #ffffff;
 }
 
+/* поля формы */
 
+.type-text {
+    clear: both;
+    margin-bottom: 29px;
+    text-align: right;
+}
+
+.type-text label {
+    float: left;
+    padding-top: 10px
+}
+
+.type-text input {
+    width: 345px;
+    height: 40px;
+}
+
+.search-hotel > label:nth-of-type(1) {
+    margin-right: 36px;
+}
+
+.search-hotel > label:nth-of-type(2) {
+    margin-left: 45px;
+    margin-right: 22px;
+}
+
+.search-hotel > input {
+    width: 114px;
+    height: 40px;
+    margin-bottom: 54px;
+}
 
 .btn-search {
     width: 458px;
