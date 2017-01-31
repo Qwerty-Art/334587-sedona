@@ -38,14 +38,13 @@ p {
     margin-right: auto;
 }
 
-
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
 }
 
-/* стили для index */
+/* стили для header */
 
 .main-header {
     position: relative;
@@ -61,14 +60,43 @@ p {
 
 .main-navigation ul {
     margin: 0;   
+    padding: 0;
 }
 
 .main-navigation li {
-    display: inline;    
+    display: inline-block;
     margin-bottom: 16px;
     list-style: none;  
     vertical-align: top;
-    text-align: center;
+}
+
+.nav-right ul {
+    text-align: right;
+}
+
+.nav-right li:first-child {
+    margin-right: 25%;
+}
+
+.nav-left ul {
+    text-align: left;
+}
+
+.nav-left ul li{}
+
+.nav-left li:first-child{
+    margin-right: 22%;
+}
+
+.nav-left {
+    float: left;
+    width: 50%;
+    
+}
+
+.nav-right {
+    float: right;
+    width: 50%;
 }
 
 .logo-header {
@@ -79,6 +107,8 @@ p {
     height: 70px;
     margin-left: -70px;
 }
+
+/* стили для index */
 
 main{
     background-color: indianred;
@@ -266,18 +296,20 @@ main{
     background-color: #81b3d2;
 }
 
-
+/* стили для footer */
 
 .main-footer {
     padding-top: 36px;
     padding-bottom: 36px;
+    padding-left: 6%;
+    padding-right: 6%;
     background-color: rgba(255,255,255,0.9);
 }
 
 .footer-visit {
     float: left;
     width: 33.33%;
-    text-align: center;
+    text-align: left;
 }
 
 .footer-social {
@@ -289,15 +321,18 @@ main{
 .footer-copyright {
     float: left;
     width: 33.33%;
-    text-align: center;
+    text-align: right;
    
 }
 
 .footer-copyright p {
-    width: 33.33%;
+    position: relative;
+    bottom: 18px;
+    width: 30%;
+    margin-right: 5px;
     display: inline-block;
     vertical-align: middle;    
-    text-align: center;
+    text-align: right;
 }
 
 
@@ -307,7 +342,6 @@ main{
     padding-left: 6%;
     padding-right: 6%;
 }
-
 
 .filter {
     min-height: 217px;
@@ -340,6 +374,15 @@ main{
     padding: 0;
     border-style: none;
     text-align: right;
+}
+
+legend {
+    margin-bottom: 30px;
+}
+
+.checkbox-left,
+.checkbox-right {
+    margin-bottom: 30px;
 }
 
 .result-sorting {

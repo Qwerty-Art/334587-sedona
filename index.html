@@ -8,7 +8,8 @@
     <body>
         <div class="wrapper">
             <header class="main-header">
-                    <nav class="main-navigation">
+                <nav class="main-navigation clearfix">
+                    <div class="nav-left">
                         <ul>
                             <li>
                                 <a href="#">Информация</a>
@@ -16,6 +17,10 @@
                             <li>
                                 <a href="#">Фото и видео</a>
                             </li>
+                        </ul> 
+                    </div>
+                    <div class="nav-right">
+                        <ul>
                             <li>
                                 <a href="#">Карта штата</a>
                             </li>
@@ -23,6 +28,7 @@
                                 <a href="hotels.html">Гостиницы</a>
                             </li> 
                         </ul>
+                    </div>
                     </nav>
                     <div class="logo-header">
                         <a href="index.html"><img src="img/header-logo.png" width="138" height="70" alt="City of Seodna"></a>
@@ -95,14 +101,11 @@
                         <div class="type-text">
                             <label for="departure-date">Дата выезда:</label>
                             <input id="departure-date" type="text" name="departure-date" > 
-                        </div>
-                        
+                        </div>                        
                         <label for="number-of-adults">Взрослые:</label>
                         <input id="number-of-adults" type="number" name="number-of-adults" >
-                       
                         <label for="amount-of-children">Дети:</label>
                         <input id="amount-of-children" type="number" name="amount-of-children">
-                       
                         <button class="btn-search" type="submit">Найти</button>
                      </form>
                 </div>
