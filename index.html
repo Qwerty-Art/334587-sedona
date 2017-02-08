@@ -104,11 +104,11 @@
                         <button class="calendar calendar-departure" type="button"></button>               
                         <label for="number-of-adults">Взрослые:</label>
                         <button class="btn-minus-adults btn-minus-status" type="button"></button>
-                        <input class="number" id="number-of-adults" type="text" name="number-of-adults" value="2">
+                        <input class="number" id="number-of-adults" type="text" name="number-of-adults" value="2" pattern="^[0-9]+$">
                         <button class="btn-plus-adults btn-plus-status" type="button"></button>
                         <label for="amount-of-children">Дети:</label>
                         <button class="btn-minus-children btn-minus-status" type="button"></button>
-                        <input class="number" id="amount-of-children" type="text" name="amount-of-children" value="0">
+                        <input class="number" id="amount-of-children" type="text" name="amount-of-children" value="0" pattern="^[0-9]+$">
                         <button class="btn-plus-children btn-plus-status" type="button"></button>
                         <button class="btn-search" type="submit">Найти</button>
                      </form>
