@@ -416,28 +416,37 @@ label + .text {
 .search-hotel > label:nth-of-type(4) {
     margin-right: 23px;
 }
-.calendar-1::after {
+.calendar-arrival {
     content: "";
     position: absolute;
-    top: 65px;
-    left: 430px;
+    top: 62px;
+    right: 63px;
     display: block;
-    width: 21px;
-    height: 22px;
-    background: url("../img/spritesheet.png") no-repeat -10px -10px;
+    width: 25px;
+    height: 25px;
+    border: none;
+    background: url("../img/spritesheet.png") no-repeat -8px -9px;
 }
 
-.calendar-2::after {
+.calendar-departure {
     content: "";
     position: absolute;
-    top: 63px;
-    left: 485px;
+    top: 129px;
+    right: 63px;
     display: block;
-    width: 21px;
-    height: 22px;
-    background: url("../img/spritesheet.png") no-repeat -10px -10px;
+    width: 25px;
+    height: 25px;
+    border: none;
+    background: url("../img/spritesheet.png") no-repeat -8px -9px;
 }
 
+.calendar:hover {
+    background-position: -49px -9px ;
+}
+
+.calendar:active {
+    background-position: -90px -9px;
+}
 
 .search-hotel > input {
     box-sizing: border-box;
@@ -451,7 +460,6 @@ label + .text {
 
 .search-hotel > input:nth-of-type(3) {
     margin-right: 50px;
-    margin-bottom: 55px;
     padding: 0;
 }
 
@@ -462,6 +470,7 @@ label + .text {
 .btn-search {
     width: 458px;
     height: 58px;
+    margin-top: 26px;
     font-size: 21px;
     border: none;
     color: #ffffff;
@@ -469,6 +478,62 @@ label + .text {
     font-family: "PT Sans", "Arial", sans-serif;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+.btn-minus-adults {
+    position: absolute;
+    top: 206px;
+    left: 181px;
+    width: 12px;
+    height: 7px;
+    border: none;
+    background: url("../img/spritesheet.png") no-repeat -10px -107px;
+}
+
+.btn-plus-adults {
+    position: absolute;
+    top: 203px;
+    left: 256px;
+    width: 14px;
+    height: 14px;
+    border: 0;
+    background: url("../img/spritesheet.png") no-repeat -105px -108px;
+}
+
+.btn-minus-children {
+    position: absolute;
+    top: 206px;
+    right: 144px;
+    width: 12px;
+    height: 7px;
+    border: none;
+    background: url("../img/spritesheet.png") no-repeat -10px -107px;
+}
+
+.btn-plus-children {
+    position: absolute;
+    top: 203px;
+    right: 67px;
+    width: 14px;
+    height: 14px;
+    border: 0;
+    background: url("../img/spritesheet.png") no-repeat -105px -108px;
+}
+
+.btn-minus-status:hover {
+    background-position: -42px -107px;
+}
+
+.btn-minus-status:active {
+    background-position: -74px -107px;
+}
+
+.btn-plus-status:hover {
+    background-position: -136px -108px;
+}
+
+.btn-plus-status:active {
+    background-position: -9px -139px;
 }
 
 .btn-search:hover {
