@@ -142,6 +142,10 @@ main{
     padding-top: 76px;
     padding-bottom: 84px;
     box-sizing: border-box;
+    background-image: url("../img/main-strip.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
 }
 
 .logo-main img {
@@ -151,7 +155,7 @@ main{
     margin-right: auto;
 }
 
-.logo-main::after {
+/*.logo-main::after {
     content: "";
     position: absolute;
     display: block;
@@ -163,8 +167,7 @@ main{
     
     height: 57px;
     background: url(../img/main-strip.png) no-repeat 0 0;
-}
-
+}*/
 .sedona {
     padding-top: 40px;
     background-color: white;
