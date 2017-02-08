@@ -158,7 +158,9 @@ main{
     bottom: 0;
     left: auto;
     right: auto;
-    width: 100%;
+    min-width: 768px;
+    max-width: 1200px;
+    
     height: 57px;
     background: url(../img/main-strip.png) no-repeat 0 0;
 }
@@ -386,11 +388,11 @@ input {
     border: none;
 }
 
-label + input[type="text"] {
+label + .text {
     display: inline-block;
 }
 
-.search-hotel input[type="text"] {
+.search-hotel .text {
     width: 347px;
     text-align: left;
 }
@@ -447,6 +449,11 @@ label + input[type="text"] {
 .search-hotel > input:nth-of-type(3) {
     margin-right: 50px;
     margin-bottom: 55px;
+    padding: 0;
+}
+
+.search-hotel > input:nth-of-type(4) {
+    padding: 0;
 }
 
 .btn-search {
@@ -860,15 +867,56 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .sorting-icon > ul {
-    display: inline;
+    margin: 0;
     padding: 0;
 }
 
 .sorting-icon li {
-    display: inline;
-    margin-left: 10px;
+    display: inline-block;
+    vertical-align: top;    
+    width: 14px;
+    height:15px ;
+    margin-left: 3px;
     list-style: none;
     font-size: 
+}
+
+.sorting .sorting-up,
+.sorting .sorting-up:link {
+    display:inline-block;
+    vertical-align: top;
+    width: 14px;
+    height: 11px;
+    margin-top: 8px;
+    border: none;
+    background: url(../img/spritesheet.png) no-repeat -101px -163px;
+}
+
+.sorting .sorting-up:hover {
+    background-position: -39px -163px
+}
+
+.sorting .sorting-up:active {
+    background-position: -70px -163px
+}
+
+.sorting .sorting-down,
+.sorting .sorting-down:link {
+    display:inline-block;
+    vertical-align: top;
+    width: 14px;
+    height: 11px;
+    border: none;
+    margin-top: 7px;
+    background: url(../img/spritesheet.png) no-repeat -101px -68px;
+}
+
+.sorting .sorting-down:hover {
+    background-position: -132px -8px
+}
+
+.sorting .sorting-down:active {
+    background-position: -132px -38px
 }
 
 .sorting .active-price {
