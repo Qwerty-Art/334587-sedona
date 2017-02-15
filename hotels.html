@@ -34,27 +34,31 @@
                 <form class="filter container clearfix" action="https://echo.htmlacademy.ru/" method="get">
                     <fieldset class="infrastructure">
                         <legend>Инфраструктура:</legend>
-                        <input id="pool" type="checkbox" name="infrastructure" value="pool" checked> 
+                        <input class="input-hidden" id="pool" type="checkbox" name="infrastructure" value="pool" checked disabled> 
                         <label for="pool">Бассейн</label>
-                        <input id="parking" type="checkbox" name="infrastructure" value="parking">
+                        <input class="input-hidden" id="parking" type="checkbox" name="infrastructure" value="parking">
                         <label for="parking">Парковка</label>
-                        <input id="wi-fi" type="checkbox" name="infrastructure" value="wi-fi">
+                        <input class="input-hidden" id="wi-fi" type="checkbox" name="infrastructure" value="wi-fi">
                         <label for="wi-fi">wi-fi</label>
                     </fieldset>
                     <fieldset class="home">
                         <legend>Тип жилья:</legend>
-                        <input id="hotel" type="checkbox" name="home" value="hotel" checked>
+                        <input class="input-hidden" id="hotel" type="checkbox" name="home" value="hotel" checked>
                         <label for="hotel">Гостиница</label>
-                        <input id="motel" type="checkbox" name="home" value="motel" checked>
+                        <input class="input-hidden" id="motel" type="checkbox" name="home" value="motel" checked>
                         <label for="motel">Мотель</label>
-                        <input id="apartaments" type="checkbox" name="home" value="apartaments" checked>
+                        <input class="input-hidden" id="apartaments" type="checkbox" name="home" value="apartaments" checked>
                         <label for="apartaments">Апартаменты</label>
                     </fieldset>    
                     <fieldset class="price">
                         <legend>Стоимость в сутки (Р):</legend>
                         <div class="price-controls">
-                            <label class="min-price" for="min">от <input id="min" type="text" name="min-price" value="0"></label>                            
-                            <label class="max-price" for="max">до <input id="max" type="text" name="max-price" value="3000"></label>                            
+                           <div class="block-min-price">
+                            <label class="min-price" for="min">от <input id="min" type="text" name="min-price" value="0"></label>   
+                            </div>
+                               <div class="block-max-price">             
+                                <label class="max-price" for="max">до <input id="max" type="text" name="max-price" value="3000"></label>
+                            </div>
                          </div>
                          <div class="range-controls">
                             <div class="scale">
@@ -77,8 +81,8 @@
                         </ul>
                         <div class="sorting-icon">
                             <ul>
-                                <li><a class="sorting-up sorting-up-status" href="#"></a></li>
-                                <li><a class="sorting-down" href="#"></a></li>
+                                <li><a class="sorting-up" href="#"></a></li>
+                                <li><a class="sorting-down sorting-down-status" href="#"></a></li>
                             </ul>
                         </div>
                     </div>

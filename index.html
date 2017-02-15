@@ -27,7 +27,7 @@
                     </ul>
                     </nav>
                      <div class="logo-header">
-                        <a href="index.html"><img src="img/header-logo.png" width="138" height="70" alt="City of Seodna"></a>
+                        <a href="index.html"><img src="img/header-logo.png" width="138" height="70" alt="City of Sedona"></a>
                     </div>
             </header>
             <main>
@@ -49,16 +49,16 @@
                             <img src="img/sedona-city.jpg" width="800" height="400" alt="Sedona city">
                         </div>
                     </div>
-                    <div class="block-icon clearfix">
-                        <div class="feature-item icon">
+                    <div class="block-icon">
+                        <div class="icon">
                             <h2 class="feature-house">Жилье</h2>
                             <p class="p-house">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-                        </div>
-                        <div class="feature-item icon">      
+                        </div>                        
+                        <div class="icon">      
                             <h2 class="feature-food">Еда</h2>
                             <p class="p-food">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                         </div>
-                        <div class="feature-item icon">       
+                        <div class="icon">       
                             <h2 class="feature-gift">Сувениры</h2>
                             <p class="p-gift">Не только китайского, но и местного производства!</p>
                         </div>
@@ -73,18 +73,18 @@
                             <p class="p-blue-two">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                         </div>
                     </div>
-                    <div class="block-gray clearfix">
-                        <div class="feature-item gray">
+                    <div class="block-gray">
+                        <div class="gray">
                             <h2 class="h-gray-three">Небольшая площадь</h2>
                             <p>— №3 —</p>
                             <p class="p-gray-three">Все достопримеча&shy;тельности находятся очень близко</p>
                         </div>
-                        <div class="feature-item gray">
+                        <div class="gray">
                             <h2 class="h-gray-four">Красивая дорога</h2>
                             <p>— №4 —</p>
                             <p class="p-gray-four">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                         </div>
-                        <div class="feature-item gray">
+                        <div class="gray">
                             <h2 class="h-gray-five">Мало туристов</h2>
                             <p>— №5 —</p>
                             <p class="p-gray-five">Большинство едет в Гранд Каньон и толпится там</p>
@@ -97,21 +97,37 @@
                     <a href="hotels.html"><h3>Поиск гостиницы в Седоне</h3></a>
                 </div>
                 <div class="search">
-                    <form class="search-hotel" action="https://echo.htmlacademy.ru" method="get">
-                        <label for="arrival-date">Дата заезда:</label>
-                        <input class="text" id="arrival-date" type="text" name="arrival-date" value="24 апреля 2017"> 
-                        <button class="calendar calendar-arrival" type="button"></button>
-                        <label for="departure-date">Дата выезда:</label>
-                        <input class="text" id="departure-date" type="text" name="departure-date" value="4 июля 2017">    
-                        <button class="calendar calendar-departure" type="button"></button>   
-                        <label for="number-of-adults">Взрослые:</label>
-                        <button class="btn-minus-adults btn-minus-status" type="button"></button>
-                        <input class="number" id="number-of-adults" type="text" name="number-of-adults" value="2" pattern="^[0-9]+$">
-                        <button class="btn-plus-adults btn-plus-status" type="button"></button>                                          
-                        <label for="amount-of-children">Дети:</label>
-                        <button class="btn-minus-children btn-minus-status" type="button"></button>
-                        <input class="number" id="amount-of-children" type="text" name="amount-of-children" value="0" pattern="^[0-9]+$">
-                        <button class="btn-plus-children btn-plus-status" type="button"></button>
+                    <form class="search-hotel clearfix" action="https://echo.htmlacademy.ru" method="get">
+                        <div class="block-arrival-date clearfix">
+                            <label class="label-arrival" for="arrival-date">Дата заезда:</label>
+                            <div class="block-input-arrival">
+                                <input class="input-status input-date" id="arrival-date" type="text" name="arrival-date" value="24 апреля 2017"> 
+                                <button class="calendar calendar-arrival" type="button"></button>
+                             </div>
+                        </div>
+                        <div class="block-departure-date clearfix">
+                            <label class="label-departure" for="departure-date">Дата выезда:</label>
+                            <div class="block-input-departure">
+                                <input class="input-status input-date" id="departure-date" type="text" name="departure-date" value="4 июля 2017">    
+                                <button class="calendar calendar-departure" type="button"></button> 
+                            </div>
+                        </div> 
+                        <div class="block-adults clearfix">
+                            <label class="label-adults" for="number-of-adults">Взрослые:</label>
+                            <div class="block-input-adults">
+                                <button class="btn-minus btn-minus-status" type="button"></button>
+                                <input class="input-status input-number" id="number-of-adults" type="text" name="number-of-adults" value="2" pattern="^[0-9]+$">
+                                <button class="btn-plus btn-plus-status" type="button"></button>
+                            </div> 
+                        </div>
+                        <div class="block-children clearfix">
+                            <label class="label-children" for="amount-of-children">Дети:</label>
+                            <div class="block-input-children">
+                                <button class="btn-minus btn-minus-status" type="button"></button>
+                                <input class="input-status input-number" id="amount-of-children" type="text" name="amount-of-children" value="0" pattern="^[0-9]+$">
+                                <button class="btn-plus btn-plus-status" type="button"></button>
+                            </div>
+                        </div>
                         <button class="btn-search" type="submit">Найти</button>
                      </form>
                 </div>
