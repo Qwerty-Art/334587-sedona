@@ -10,57 +10,70 @@
     <body>
         <div class="wrapper">
             <header class="main-header">
-                <nav class="main-navigation clearfix">
-                    <div class="nav-left">
-                        <ul>
-                            <li>
-                                <a href="#">Информация</a>
-                            </li>
-                            <li>
-                                <a href="#">Фото и видео</a>
-                            </li>
-                        </ul> 
+                <nav class="main-navigation">
+                    <ul class="nav-list">
+                        <li class="menu-item">
+                            <a class="link-menu" href="#">Информация</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="link-menu" href="#">Фото и видео</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="link-menu" href="#">Карта штата</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="no-active">Гостиницы</a>
+                        </li> 
+                    </ul>
+                    </nav>
+                     <div class="logo-header">
+                        <a href="index.html"><img src="img/header-logo.png" width="138" height="70" alt="City of Seodna"></a>
                     </div>
-                    <div class="nav-right">
-                        <ul>
-                            <li>
-                                <a href="#">Карта штата</a>
-                            </li>
-                            <li>
-                                <a class="active-hotels">Гостиницы</a>
-                            </li> 
-                        </ul>
-                    </div>
-                </nav>
-                <div class="logo-header">
-                    <a href="index.html"><img src="img/header-logo.png" width="138" height="70" alt="City of Seodna"></a>
-                </div>
             </header>
             <main>
                 <form class="filter container clearfix" action="https://echo.htmlacademy.ru/" method="get">
                     <fieldset class="infrastructure">
                         <legend>Инфраструктура:</legend>
-                        <input id="pool" type="checkbox" name="infrastructure" value="pool" checked> 
-                        <label for="pool">Бассейн</label>
-                        <input id="parking" type="checkbox" name="infrastructure" value="parking">
-                        <label for="parking">Парковка</label>
-                        <input id="wi-fi" type="checkbox" name="infrastructure" value="wi-fi">
-                        <label for="wi-fi">wi-fi</label>
+                        <ul class="list-form">
+                            <li>
+                                <input class="input-hidden" id="pool" type="checkbox" name="infrastructure" value="pool" checked> 
+                                <label for="pool">Бассейн</label>
+                            </li>                           
+                            <li>
+                                <input class="input-hidden" id="parking" type="checkbox" name="infrastructure" value="parking">
+                                <label for="parking">Парковка</label>
+                            </li>
+                            <li>
+                                <input class="input-hidden" id="wi-fi" type="checkbox" name="infrastructure" value="wi-fi">
+                                <label for="wi-fi">wi-fi</label>
+                            </li>
+                        </ul>
                     </fieldset>
                     <fieldset class="home">
                         <legend>Тип жилья:</legend>
-                        <input id="hotel" type="checkbox" name="home" value="hotel" checked>
-                        <label for="hotel">Гостиница</label>
-                        <input id="motel" type="checkbox" name="home" value="motel" checked>
-                        <label for="motel">Мотель</label>
-                        <input id="apartaments" type="checkbox" name="home" value="apartaments" checked>
-                        <label for="apartaments">Апартаменты</label>
+                        <ul class="list-form">
+                            <li>
+                                <input class="input-hidden" id="hotel" type="checkbox" name="home" value="hotel" checked>
+                                <label for="hotel">Гостиница</label>
+                            </li>
+                            <li>
+                                <input class="input-hidden" id="motel" type="checkbox" name="home" value="motel" checked>
+                                <label for="motel">Мотель</label>
+                            </li>
+                            <li>
+                                <input class="input-hidden" id="apartaments" type="checkbox" name="home" value="apartaments" checked>
+                                <label for="apartaments">Апартаменты</label>
+                            </li>
                     </fieldset>    
                     <fieldset class="price">
                         <legend>Стоимость в сутки (Р):</legend>
                         <div class="price-controls">
-                            <label class="min-price" for="min">от <input id="min" type="text" name="min-price" value="0"></label>                            
-                            <label class="max-price" for="max">до <input id="max" type="text" name="max-price" value="3000"></label>                            
+                           <div class="block-min-price">
+                            <label class="min-price" for="min">от <input id="min" type="text" name="min-price" value="0"></label>   
+                            </div>
+                               <div class="block-max-price">             
+                                <label class="max-price" for="max">до <input id="max" type="text" name="max-price" value="3000"></label>
+                            </div>
                          </div>
                          <div class="range-controls">
                             <div class="scale">
@@ -78,13 +91,13 @@
                         <span>Сортировка:</span>
                         <ul>
                             <li><a class="active-price">По цене</a></li>
-                            <li><a href="#">По типу</a></li>
-                            <li><a href="#">По рейтингу</a></li>
+                            <li><a class="no-active" href="#">По типу</a></li>
+                            <li><a class="no-active" href="#">По рейтингу</a></li>
                         </ul>
                         <div class="sorting-icon">
                             <ul>
-                                <li><a class="sorting-up sorting-up-status" href="#"></a></li>
-                                <li><a class="sorting-down" href="#"></a></li>
+                                <li><a class="sorting-up" href="#"></a></li>
+                                <li><a class="sorting-down sorting-down-status" href="#"></a></li>
                             </ul>
                         </div>
                     </div>
@@ -94,12 +107,14 @@
                         </div>    
                         <div class="info">
                             <h2>Amara Resort &amp; Spa</h2>
-                            <b>Гостиница</b>
-                            <b>От 4000 Р.</b>                        
-                            <div class="block-btn">
+                            <div class="column-left">
+                                <b class="text-left">Гостиница</b>
                                 <a class="btn-info" href="#">Подробнее</a>
-                                <a class="btn-book" href="#">Забронировать</a>
                             </div>
+                            <div class="column-right">
+                                <b class="text-rght">От 4000 Р.</b> 
+                                <a class="btn-book" href="#">Забронировать</a>
+                            </div> 
                         </div>   
                         <div class="rating">
                             <span class="stars stars-4">Звезды</span>
@@ -112,10 +127,12 @@
                         </div>
                         <div class="info">
                             <h2>Desert Quail Inn</h2>
-                            <b>Мотель</b>
-                            <b>От 3000 Р.</b>
-                            <div class="block-btn">
+                            <div class="column-left">
+                                <b class="text-left">Мотель</b>
                                 <a class="btn-info" href="#">Подробнее</a>
+                            </div>
+                            <div class="column-right">
+                                <b class="text-rght">От 3000 Р.</b>
                                 <a class="btn-book" href="#">Забронировать</a>
                             </div>
                         </div>   
@@ -130,10 +147,12 @@
                         </div>  
                         <div class="info">
                             <h2>Villas at Poco Diablo</h2>
-                            <b>Апартаменты</b>
-                            <b>От 2000 Р.</b>
-                            <div class="block-btn">
+                            <div class="column-left">
+                                <b class="text-left">Апартаменты</b>
                                 <a class="btn-info" href="#">Подробнее</a>
+                            </div>
+                            <div class="column-right">
+                                <b class="text-rght">От 2000 Р.</b>
                                 <a class="btn-book" href="#">Забронировать</a>
                             </div>
                         </div>   
