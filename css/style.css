@@ -337,7 +337,7 @@ main h1 {
 }
 
 .gray:nth-child(3n-2) {
-    margin-left: -2px;
+    margin-left: 0;
 }
 
 .gray h2 {
