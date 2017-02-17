@@ -429,6 +429,12 @@ main h1 {
     z-index: 1;
 }
 
+.map-sedona iframe {
+    width: 100%;
+    height: 583px;
+    border: none; 
+}
+
 .search-hotel {
     box-sizing: border-box;
     width: 570px;
