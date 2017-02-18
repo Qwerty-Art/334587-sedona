@@ -1,0 +1,1 @@
+var popup=document.querySelector(".search-hotel"),link=document.querySelector(".btn-search-hotel");popup.classList.toggle("popup-modal"),link.addEventListener("click",function(a){a.preventDefault(),popup.classList.toggle("popup-modal")});
